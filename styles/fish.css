@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    background-color: #888888;
+    background-color: #2b73b9;
     justify-content: center;
 }
 
 .fish {
     padding:1em;
-    background-color: #888888;
+    background-color: #2b73b9;
 }
 
 
