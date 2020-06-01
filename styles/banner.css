@@ -1,3 +1,9 @@
 .banner {
-    background-color: darkgoldenrod;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.banner__title {
+    font-size: 2em;
+    padding-bottom: 0.5em;
 }
