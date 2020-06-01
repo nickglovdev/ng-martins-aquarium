@@ -1,9 +1,10 @@
 .locationList {
-    background-color: mediumaquamarine;
+    display:flex;
+    flex-direction: row;
 }
 
 .location {
-    background-color: mediumseagreen;
+    background-color: #54a5d5;
 }
 
 

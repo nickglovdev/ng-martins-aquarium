@@ -1,8 +1,10 @@
 .quoteList {
-    background-color: lightyellow;
+    background-color: #7fbadc;
+    display: flex;
+    flex-flow: row;
 }
 
 .quote {
-    background-color: #bebebe;
+    background-color: #7fbadc;
     padding:0.6em;
 }

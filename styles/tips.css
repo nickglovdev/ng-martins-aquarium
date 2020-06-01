@@ -1,8 +1,11 @@
 .tipList {
-    background-color: dodgerblue;
+    background-color: #7a9cc4;
     height: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
 .tip {
-    background-color: royalblue;
+    background-color: #2e69a7;
+    padding:0.5em;
 }
