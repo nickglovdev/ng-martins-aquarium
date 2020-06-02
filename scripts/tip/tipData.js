@@ -1,11 +1,14 @@
-const quoteCollection = [
+const tipCollection = [
     {
-        tip: "Forage brooklyn prism shaman readymade hammock selvage hot chicken. -That Guy",
+        tip: "Poutine viral man braid farm-to-table chambray stumptown.",
     },
     {
-        tip: "Forage brooklyn prism shaman readymade hammock selvage hot chicken. -That Other Guy",
+        tip: "I'm baby irony hoodie normcore DIY art party heirloom. Authentic kombucha austin",
     },
     {
-        tip: "Forage brooklyn prism shaman readymade hammock selvage hot chicken. -The Hip Gal"
+        tip: "VHS fingerstache snackwave cred listicle williamsburg pug jianbing hella edison bulb cray blog. Live-edge jean"
+    },
+    {
+        tip: "Poke roof party schlitz photo booth chicharrones wayfarers drinking"
     }
 ]
