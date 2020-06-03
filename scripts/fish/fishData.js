@@ -19,7 +19,7 @@ const fishCollection = [
     },
     {
         species: "Puffer",
-        length: 4,
+        length: 3,
         name: "Tim",
         location: "Sea of Tools",
         food: "Nails",
@@ -28,7 +28,7 @@ const fishCollection = [
     },
     {
         species: "King Fish",
-        length: 3,
+        length: 142,
         name: "Lord Fishy Pants",
         location: "Sea of Royalty",
         food: "Gold",
@@ -46,7 +46,7 @@ const fishCollection = [
     },
     {
         species: "Flying Fish",
-        length: 6,
+        length: 244,
         name: "Co-Pilot Troy",
         location: "The Skys of Arcadia",
         food: "Sky Pirates",
@@ -54,3 +54,40 @@ const fishCollection = [
 
     }
 ]
+
+// 3, 6, 9, 12, etc... fish
+const mostHolyFish = () => {
+    const holyFish = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 3 === 0 && fish.length % 5 !== 0) {
+            holyFish.push(fish)
+        }
+    }
+
+    return holyFish
+}
+
+// 5, 10, 15, 20, 25, etc... fish
+const soldierFish = () => {
+    const soldiers = []
+    for (const fish of fishCollection) {
+        if (fish.length % 5 === 0 && fish.length % 3 !== 0) {
+            soldiers.push(fish)
+        }
+    }
+
+    return soldiers
+}
+
+// Any fish not a multiple of 3 or 5
+const nonHolyFish = () => {
+    const regularFish = []
+    for (const fish of fishCollection) {
+        if (fish.length % 5 !== 0 && fish.length % 3 !== 0) {
+            regularFish.push(fish)
+        }
+    }
+
+    return regularFish
+}
