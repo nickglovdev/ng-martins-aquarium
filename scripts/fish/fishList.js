@@ -1,19 +1,50 @@
-/*
-Responsible for generating a list of fish HTML
-representations, and putting in the browser
-*/
+// Function to show holy fish in the browser
+const showHolyFish = () => {
+    const holyFish = mostHolyFish()
 
-const fishList = () => {
-    // Iterate the collection of fish objects
-    for (const currentFishObject of fishCollection) {
+    for (const holyFishObject of holyFish) {
+        const HolyFishHTMLRepresentation = fishConverter(holyFishObject)
 
-        // Convert the current fish to its HTML representation
-        const fishHTML = fishConverter(currentFishObject)
-
-        // Find the <article> element in index.html
         const fishArticleElement = document.querySelector(".fishList")
-
-        // Put the fish HTML representation inside the <article> element
-        fishArticleElement.innerHTML += fishHTML
+        fishArticleElement.innerHTML += HolyFishHTMLRepresentation
     }
 }
+
+// Function to show soldier fish in the browser
+const showSoldierFish = () => {
+    const soldier = soldierFish()
+
+    for (const soldierFishObject of soldier) {
+        const soldierFishHTMLRepresentation = fishConverter(soldierFishObject)
+
+        const fishArticleElement = document.querySelector(".fishList")
+        fishArticleElement.innerHTML += soldierFishHTMLRepresentation
+    }
+}
+
+// Function to show common fish in the browser
+const showCommonFish = () => {
+    const common = nonHolyFish()
+
+    for (const commonFishObject of common) {
+        const commonFishHTMLRepresentation = fishConverter(commonFishObject)
+
+        const fishArticleElement = document.querySelector(".fishList")
+        fishArticleElement.innerHTML += commonFishHTMLRepresentation
+    }
+}
+
+
+const fishList = () => {
+    // Invoke all three functions here
+    showHolyFish()
+    showSoldierFish()
+    showCommonFish()
+}
+
+
+
+
+
+
+
