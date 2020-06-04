@@ -1,6 +1,5 @@
 let fishCollection = []
 
-
 const getFishData = () => {
     return fetch("http://localhost:8088/fish").then(
         (httpResponse) => {
@@ -14,6 +13,29 @@ const getFishData = () => {
             }
         )
 }
+
+// 3, 6, 9, 12, etc... fish
+const mostHolyFish = () => {
+    const holyFish = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 3 === 0 && fish.length % 5 !== 0) {
+            holyFish.push(fish)
+        }
+    }
+
+    return holyFish
+}
+
+// 5, 10, 15, 20, 25, etc... fish
+const soldierFish = () => {
+    const soldiers = []
+    for (const fish of fishCollection) {
+        if (fish.length % 5 === 0 && fish.length % 3 !== 0) {
+            soldiers.push(fish)
+        }
+    }
+]
 
 // 3, 6, 9, 12, etc... fish
 const mostHolyFish = () => {
