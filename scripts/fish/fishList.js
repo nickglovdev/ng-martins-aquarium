@@ -21,6 +21,14 @@ fishTypeDropdown.addEventListener("change", (changeEvent) => {
         showCommonFish()
     }
 })
+const fishVisibilityButton = document.querySelector(".toggleFish")
+
+fishVisibilityButton.addEventListener("click", (clickEvent) => {
+    // const locationListArticle = document.querySelector(".locationList")
+    // locationListArticle.classList.toggle("hidden")
+
+    document.querySelector(".fishList").classList.toggle("hidden")
+})
 
 
 // Function to show holy fish in the browser

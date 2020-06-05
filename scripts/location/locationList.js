@@ -1,3 +1,10 @@
+const locationVisibilityButton = document.querySelector(".toggleLocation")
+
+locationVisibilityButton.addEventListener("click", (clickEvent) => {
+    
+    document.querySelector(".locationList").classList.toggle("hidden")
+})
+
 const locationList = () => {
     // Iterate the collection of location objects
     for (const currentLocationObject of locationCollection) {
