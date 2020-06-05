@@ -19,6 +19,9 @@ fishTypeDropdown.addEventListener("change", (changeEvent) => {
     } else if (userChoice === "plebs") {
         clearFishList()
         showCommonFish()
+    } else if (userChoice === "all") {
+        clearFishList()
+        fishList()
     }
 })
 const fishVisibilityButton = document.querySelector(".toggleFish")
