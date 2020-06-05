@@ -1,3 +1,11 @@
+const quoteVisibilityButton = document.querySelector(".toggleQuote")
+
+quoteVisibilityButton.addEventListener("click", (clickEvent) => {
+    
+
+    document.querySelector(".quoteList").classList.toggle("hidden")
+})
+
 const quoteList = () => {
     // Iterate the collection of quote objects
     for (const currentQuoteObject of quoteCollection) {
